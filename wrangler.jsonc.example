@@ -1,0 +1,11 @@
+{
+  "name": "cloudflare-ai-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2024-10-22",
+  "ai": {
+    "binding": "AI"
+  },
+  "vars": {
+    "API_KEY_SECRET": "your-api-key-here"
+  }
+}

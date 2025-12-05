@@ -1,0 +1,42 @@
+{
+	"name": "cloudflare-ai-api",
+	"version": "1.0.0",
+	"description": "Production-ready API wrapper for Cloudflare Workers AI with 60+ supported models",
+	"type": "module",
+	"main": "src/index.ts",
+	"scripts": {
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy --minify",
+		"cf-typegen": "wrangler types --env-interface CloudflareBindings",
+		"test": "vitest",
+		"typecheck": "tsc --noEmit"
+	},
+	"keywords": [
+		"cloudflare",
+		"workers",
+		"ai",
+		"api",
+		"llm",
+		"machine-learning",
+		"serverless"
+	],
+	"author": "Palash Lalwani",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LalwaniPalash/cloudflare-ai-api.git"
+	},
+	"bugs": {
+		"url": "https://github.com/LalwaniPalash/cloudflare-ai-api/issues"
+	},
+	"homepage": "https://github.com/LalwaniPalash/cloudflare-ai-api#readme",
+	"dependencies": {
+		"hono": "^4.9.9"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20250927.0",
+		"typescript": "^5.9.2",
+		"vitest": "^1.0.0",
+		"wrangler": "^4.40.2"
+	}
+}
